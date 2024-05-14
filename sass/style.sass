@@ -25,6 +25,41 @@ body
     // align-items: center
     @include mixins.container
 
-    .logo
-        color: variaveis: . $priamry-color
+    &-logo // mesmo significado de header-logo facilita 
+        color: variaveis.$primary-color
         font-size: 3rem
+
+    .navbar
+
+        ul
+            height: 100%
+            @include mixins.flex-center
+
+            li
+                margin: 0 1rem
+                text-transform: uppercase
+                font-size: .8rem
+
+                .active
+                    color: variaveis.$secondary-color
+
+                a
+                    &:hover
+                        color: variaveis.$secondary-color
+
+    
+    .social-midia
+
+        ul
+            @include mixins.flex-center
+            height: 100%
+
+            li
+                margin: 0 1rem
+
+                a
+                    &:hover
+                        color: variaveis.$primary-color
+
+
+// sass --watch sass/style.sass:css/style.css

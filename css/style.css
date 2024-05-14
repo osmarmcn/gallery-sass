@@ -1,17 +1,61 @@
-/* Error: expected newline.
- *    ,
- * 29 |         color: variaveis: . $priamry-color
- *    |                         ^
- *    '
- *   sass\style.sass 29:25  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected newline.\a    \2577 \a 29 \2502          color: variaveis: . $priamry-color\d\a    \2502                          ^\a    \2575 \a   sass\\style.sass 29:25  root stylesheet";
+* {
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background: #000;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header-logo {
+  color: #fff;
+  font-size: 3rem;
+}
+.header .navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header .navbar ul li .active {
+  color: #20c997;
+}
+.header .navbar ul li a:hover {
+  color: #20c997;
+}
+.header .social-midia ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.header .social-midia ul li {
+  margin: 0 1rem;
+}
+.header .social-midia ul li a:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
