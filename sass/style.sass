@@ -22,7 +22,7 @@ body
 .header
     display: flex
     justify-content: space-between
-    // align-items: center
+    align-items: center
     @include mixins.container
 
     &-logo // mesmo significado de header-logo facilita 
@@ -60,6 +60,38 @@ body
                 a
                     &:hover
                         color: variaveis.$primary-color
+
+
+.gallery
+    @include mixins.container
+    @include mixins.flex-center
+    
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0
+
+    &-card
+        width: 31%
+        height: 400px
+        margin-bottom: 4%
+
+        .card-tittle
+            font-size: 2rem
+            font-weight: 300
+            margin-bottom: 1rem
+
+        .card-btn
+            padding: .6rem 2rem
+            border: 2px solid variaveis.$primary-color
+            color: variaveis.$primary-color
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1px
+
+        .card-btn:hover
+            background: variaveis.$primary-color
+            color: variaveis.$bg-color
+
 
 
 // sass --watch sass/style.sass:css/style.css

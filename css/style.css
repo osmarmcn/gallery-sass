@@ -20,6 +20,7 @@ body ul {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1170px;
   padding: 1.5rem 0;
   margin: 0 auto;
@@ -56,6 +57,40 @@ body ul {
 }
 .header .social-midia ul li a:hover {
   color: #fff;
+}
+
+.gallery {
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+}
+.gallery-card .card-tittle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card .card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery-card .card-btn:hover {
+  background: #fff;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
