@@ -74,6 +74,9 @@ body
         width: 31%
         height: 400px
         margin-bottom: 4%
+        @include mixins.flex-center
+        flex-direction: column
+        color: variaveis.$primary-color
 
         .card-tittle
             font-size: 2rem
@@ -121,5 +124,13 @@ body
         @include mixins.bg-img('refeicoes.jpg')
 
 
+footer
+    text-align: center
+    padding-bottom: 2rem
 
+    p
+        color: variaveis.$primary-color
+    span
+        font-weight: bold
+        color: variaveis.$secondary-color
 // sass --watch sass/style.sass:css/style.css

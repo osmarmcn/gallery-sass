@@ -21,6 +21,12 @@
     background-repeat: no-repeat
     filter: grayscale(100%)
     transition: .8s
+
+    &:hover
+        background-size: 110%
+        filter: grayscale(0%)
+        background-image: linear-gradient(rgba(0, 0 ,0 ,0.5 ), rgba(0, 0 , 0 , 0.5 ), url('../img/#{$img}'))
+        
     
     
     
